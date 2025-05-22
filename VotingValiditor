@@ -1,0 +1,18 @@
+class VotingValidator:
+    # Method to check if the age is eligible for voting
+    def is_eligible_to_vote(age):
+        voting_age = 18  # Minimum age required to vote
+        return age >= voting_age
+
+# Main part of the program
+if __name__ == "__main__":
+    age = 40  # Example age from user
+
+    # Create an object of VotingValidator
+    validator = VotingValidator
+
+    # Call the method and print the result
+    if validator.is_eligible_to_vote(age):
+        print("Eligible to cast the vote")
+    else:
+        print("Not eligible to cast the vote")
